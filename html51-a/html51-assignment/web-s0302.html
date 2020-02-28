@@ -19,16 +19,98 @@
     </header>
     <P> Начало Формы</p>
     <hr>
-    <form action="Form" name="test" method="POST">
-        <p>
-            <strong> Конференция:</strong> <br> Название конференции <input type="text">
-        </p>
-        <p>Сведения об участнике:</p>
-        <p>Фамилия: <input type="text">
-        </p>
-        <p>Имя: <input type="text">
-        </p>
-        </p>
+    <form action="Form.as" id="Registration" method="post">
+        <fieldset>
+            <legend> Конференция:</legend>
+            <div>
+                <label for="name">  Названия конферинции <input type="text" name="Name Conf" required="required"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Сведения об учаснике</legend>
+            <div>
+                <label for="Second name">   Фамилия <input type="text" name="Second name"></label>
+            </div>
+            <div>
+                <label for="Name">   Имя <input type="text" name="Name" required="required"></label>
+            </div>
+            <div>
+                <label for="Otch"> Отчество<input type="text" required="required" > </label>
+            </div>
+            <div>
+                <label for="Email">E-mail<input  type="text" required="required" id="Email"> </label>
+            </div>
+            <div>
+                <label for="Phone">Телефон  <input type="text" required="required" id="PhoneNumber" > </label>
+            </div>
+            <div>
+                <label for="MobPhone">Мобильный Телефон <input type="text" name="Phone" id="Phone" required="required" > </label>
+            </div>
+            <div>
+                <label for="Fax">Факс <input type="text" name="Fax" id="Fax"required="required" > </label>
+            </div>
+            <div>
+                <label for="Kode">Промо код <input type="text" name="PrKode" id="Kode"> </label>
+            </div>
+
+
+        </fieldset>
+        <fieldset>
+            <legend> <strong>    Сведения об организации</strong></legend>
+            <div>
+                <label for="NameOpg">Полное названия организации <input type="text" name="NameOrg" id="OrgName" required="required"> </label>
+            </div>
+            <div>
+                <label for="Country Reg">Страна Регистрации <input type="text" name="Country reg" id="Reg Con"> </label>
+            </div>
+            <div>
+                <label for="City">Город    <input type="text" name="City" required="required" id="city"> </label>
+            </div>
+            <div>
+                <label for="Num">ИНН (VAT-номер для организаций из стран ЕС) <input type="text" name="Reg" id="REg Num"> </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Контактное лицо по оформлению документов:</strong> <br>
+                <span style="color:blue;"> (совпадает с участником конференции)</span></legend>
+            <div>
+                <label for="Second name">   Фамилия <input type="text" required="required" name="Second name"></label>
+            </div>
+            <div>
+                <label for="Name">   Имя <input type="text" name="Name" required="required"></label>
+            </div>
+            <div>
+                <label for="Otch"> Отчество<input type="text" required="required" > </label>
+            </div>
+            <div>
+                <label for="PostIndex">Почтовый адрес (с индексом): <input type="text" name="Index" id="Index"> </label>
+            </div>
+            <div>
+                <label for="Phone">Телефон  <input type="text" required="required" id="PhoneNumber" > </label>
+            </div>
+            <div>
+                <label for="Fax">Факс <input type="text" name="Fax" id="Fax"required="required" > </label>
+            </div>
+            <div>
+                <label for="Email">E-mail<input  type="text" required="required" id="Email"> </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительно</legend>
+            <div>
+                <label for="Pr"> Примечание  </label>
+                <textarea name="pr" id="" cols="" rows="5"></textarea>
+
+            </div>
+
+        </fieldset>
+        <div style="text-align: right;">
+            <button alight="right" type="submit">Зарегестрироваться</button>
+        </div>
+        <div>
+            <label for="end"> Конец Формы</label>
+        </div>
+
 
     </form>
 </body>
