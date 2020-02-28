@@ -13,17 +13,33 @@
     <canvas id="my_canvas1" width="150" height="150">
   </canvas>
     <canvas id="my_canvas2" width="150" height="150"></canvas>
+    <canvas id="my_canvas3" width="300" height="150"></canvas>
+
 </body>
 <script type="text/javascript">
     function createImage() {
         var canvas = document.getElementById("my_canvas1");
         var ctx1 = canvas.getContext("2d");
         var canvas = document.getElementById("my_canvas2");
-        var ctx = canvas.getContext("2d");
+        var ctx2 = canvas.getContext("2d");
+        var canvas = document.getElementById("my_canvas3");
+        var ctx3 = canvas.getContext("2d");
 
 
         ctx1.fillStyle = "rgb(100,0,0)"
         ctx1.fillRect(20, 10, 50, 70);
+        ctx2.fillRect(20, 20, 110, 110);
+        ctx2.clearRect(32.5, 32.5, 85, 85);
+        ctx3.fillStyle = "red";
+        ctx3.fillRect(3, 3, 250, 50);
+        ctx3.fillStyle = "rgb(50, 205, 50 )";
+        ctx3.fillRect(15, 15, 250, 50);
+        ctx3.fillStyle = "#0000FF"
+        ctx3.fillRect(27, 27, 250, 50);
+
+
+
+
 
     }
 </script>
