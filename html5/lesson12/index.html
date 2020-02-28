@@ -12,22 +12,23 @@
 <body onload="createImage();">
     <canvas id="my_canvas1" width="150" height="150">
   </canvas>
-    <canvas id="my_canvas2" width="150" height="150">
-</canvas>
-    <script type="text/javascript">
-        function createImage() {
-            var canvas1 = document.getElementById("my_canvas1");
-            var ctx1 = canvas.getContext("2d");
-            var canvas2 = document.getElementById("my_canvas2");
-            var ctx2 = canvas.getContext("2d");
+    <canvas id="my_canvas2" width="150" height="150"></canvas>
+</body>
+<script type="text/javascript">
+    function createImage() {
+        var canvas = document.getElementById("my_canvas1");
+        var ctx1 = canvas.getContext("2d");
+        var canvas = document.getElementById("my_canvas2");
+        var ctx = canvas.getContext("2d");
 
 
-            ctx1.fillstyle = "rgb(100,0,0)"
-            ctx1.fillRect(20, 10, 50, 70);
-            ctx2.fillstyle = "rgb(100,0,0)"
-            ctx2.fillRect(20, 10, 50, 70);
-        }
-    </script>
+        ctx1.fillStyle = "rgb(100,0,0)"
+        ctx1.fillRect(20, 10, 50, 70);
+
+    }
+</script>
+
+
 
 
 
