@@ -14,6 +14,7 @@
   </canvas>
     <canvas id="my_canvas2" width="150" height="150"></canvas>
     <canvas id="my_canvas3" width="300" height="150"></canvas>
+    <canvas id="my_canvas4" width="200" height="250"></canvas>
 
 </body>
 <script type="text/javascript">
@@ -24,6 +25,8 @@
         var ctx2 = canvas.getContext("2d");
         var canvas = document.getElementById("my_canvas3");
         var ctx3 = canvas.getContext("2d");
+        var canvas = document.getElementById("my_canvas4");
+        var ctx4 = canvas.getContext("2d");
 
 
         ctx1.fillStyle = "rgb(100,0,0)"
@@ -36,7 +39,18 @@
         ctx3.fillRect(15, 15, 250, 50);
         ctx3.fillStyle = "#0000FF"
         ctx3.fillRect(27, 27, 250, 50);
-
+        ctx4.fillStyle = "blue";
+        ctx4.fillRect(0, 70, 50, 250)
+        ctx4.fillStyle = "green";
+        ctx4.fillRect(0, 10, 50, 60)
+        ctx4.fillStyle = "blue";
+        ctx4.fillRect(66.6, 120, 50, 250)
+        ctx4.fillStyle = "green";
+        ctx4.fillRect(66.6, 50, 50, 70)
+        ctx4.fillStyle = "blue";
+        ctx4.fillRect(133.3, 50, 50, 250)
+        ctx4.fillStyle = "green";
+        ctx4.fillRect(133.3, 10, 50, 48)
 
 
 
