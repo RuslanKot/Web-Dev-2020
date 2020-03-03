@@ -5,9 +5,9 @@
 
     <title>Table Demo</title>
     <meta charset="utf-8" />
-    <script src="Scripts/jquery-3.1.1.min.js"></script>
-    <script src="Scripts/tablesorter/jquery.tablesorter.combined.min.js"></script>
 
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/tablesorter/jquery.tablesorter.combined.min.js"></script>
     <style>
         th {
             background-color: blue;
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <table id="my#table">
+    <table id="myTable">
         <thead>
             <tr>
                 <th> N</th>
@@ -1120,11 +1120,12 @@
         </tbody>
         <tfoot></tfoot>
     </table>
-    </table>
+
+
 
     <script>
         $(document).ready(function() {
-            $("my#table").tablesorter();
+            $("#myTable").tablesorter();
         });
     </script>
 </body>
