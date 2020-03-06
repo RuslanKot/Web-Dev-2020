@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>LocalStorageDemo</title>
+</head>
+
+<body onload="listLoad();">
+    <div id="header">
+        <h1>
+            Пример роботы с LocalStorage
+        </h1>
+    </div>
+    <div id="notes">
+        <h3>Список записей</h3>
+        <ol id="notelist"></ol>
+    </div>
+    <div id="note">
+        <form id="formnote"></form>
+        <fieldset>
+            <table>
+                <legend>NotepadDemo</legend>
+                <tr>
+                    <td>
+                        <label class="notefield">
+                                Наименование
+                            </label>
+                    </td>
+                    <td colspan="2">
+                        <input id="notepad" type="text" class="notefield">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="notefield">
+                                Текст записи
+                            </label>
+                    </td>
+                    <td colspan="2">
+                        <textarea name="" id="notecontent" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="notebtn">
+                        <button id="delete" type="submit" onclick="saveNote();">Сохранить</button>
+                    </td>
+                    <td class="notebtn">
+                        <button id="delete" type="submit" onclick="deleteNote();">Удалить</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </form>
+    </div>
+    <div id="footer">
+        <p class="Footertext">2013 г.</p>
+    </div>
+
+    <script>
+        function listLoad() {
+
+            var list = document.getElementById('notelist');
+            for (var i in localStorage) {
+                var a = document.createElement('a');
+                a.setAttribute('onclick', "loadNote('" + i + "'); return false;");
+                a.innerText = i;
+                var element = document.createElement('li');
+                element.appendChild(a);
+                list.appendChild(element);
+            }
+        }
+
+        function loadNote(v) {
+
+            document.getElementById('notecontent').value = localStorage[v];
+            document.getElementById('notename').value = v;
+
+
+
+        }
+
+        function deleteNote() {
+
+            var name = document.getElementById('notename').value;
+
+            /*получаем значение наименования текущей записи из текстового поля*/
+
+            if (name != '') {
+
+                localStorage.removeItem(name);
+
+                /*удаление записи, в качестве идентификатора записи используется ее наименование*/
+
+            } else {
+                alert('note not found');
+            }
+
+            /* сообщение, выдаваемое при попытке удалить неопределенную запись*/
+
+        }
+    </script>
+</body>
+
+</html>
