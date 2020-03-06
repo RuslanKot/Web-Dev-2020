@@ -1,0 +1,26 @@
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.update_section {
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+.orange_update {
+    background-color: orange;
+    font-weight: bolder;
+}
+
+.brand {
+    background-color: #082833;
+    color: #C24726;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.article_limegreen {
+    background-color: limegreen;
+    font-style: italic;
+}
