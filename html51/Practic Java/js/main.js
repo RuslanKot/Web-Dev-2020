@@ -16,3 +16,18 @@ function Run2() {
     res.innerHTML = "Результат" + "<br>" + sum;
 
 }
+
+function Run3() {
+    var w = document.getElementById('w').value | 0;
+    var res = document.getElementById('res03');
+    var dob = (Math.pow(w, 3))
+    res.innerHTML = "Результат" + "<br>" + dob;
+}
+
+function Run4() {
+    var z = document.getElementById('z').value | 0;
+    var e = document.getElementById('e').value | 0;
+    var res = document.getElementById('res04');
+    var dob = Math.sqrt((Math.abs(z) * Math.abs(e)))
+    res.innerHTML = "Результат" + "<br>" + dob;
+}
