@@ -10,16 +10,39 @@
 <body>
 
     <script src="js/main.js"></script>
-    <form id="Num1">
+    <fieldset>
+        <legend>Js Practic</legend>
         <fieldset>
-            <legend> Js Practic</legend>
+            <legend> Mission 01</legend>
             <div>
+                <label for="a">Число а </label>
                 <input type="text" id="a">
-                <input type="text" id="b">
-                <button onclick="Run()">Розв'язати</button>
-                <output id="res>"></output>
-
             </div>
+            <div>
+                <label for="b">Число b</label>
+                <input type="text" id="b">
+
+            </div> <br>
+            <button onclick="Run()">Розв'язати</button>
+            <hr>
+            <output id="res"></output>
+        </fieldset>
+        <fieldset>
+            <legend>Mission 02</legend>
+            <div>
+                <label for="x">Число х</label>
+                <input type="text" id="x" name="item-x">
+            </div>
+            <div>
+                <label for="y">Число y</label>
+                <input type="text" id="y" name="item-y">
+            </div> <br>
+            <button onclick="Run2()">Розв'язати</button>
+            <hr>
+            <output id="res02"></output>
+        </fieldset>
+
+    </fieldset>
 </body>
 
 </html>
