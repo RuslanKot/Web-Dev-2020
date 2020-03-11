@@ -21,7 +21,8 @@ function Run3() {
     var w = document.getElementById('w').value | 0;
     var res = document.getElementById('res03');
     var dob = (Math.pow(w, 3))
-    res.innerHTML = "Результат" + "<br>" + dob;
+    var sun = (6 * Math.pow(w, 2))
+    res.innerHTML = "Результат" + "<br>" + "Об'єм куба = " + dob + "<br>" + "Площа сторони = " + sun;
 }
 
 function Run4() {

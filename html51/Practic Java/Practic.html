@@ -16,11 +16,11 @@
             <legend> Mission 01</legend>
             <div>
                 <label for="a">Число а </label>
-                <input type="text" id="a">
+                <input type="text" id="a" required="required">
             </div>
             <div>
                 <label for="b">Число b</label>
-                <input type="text" id="b">
+                <input type="text" id="b" required="required">
 
             </div> <br>
             <button onclick="Run()">Розв'язати</button>
@@ -31,11 +31,11 @@
             <legend>Mission 02</legend>
             <div>
                 <label for="x">Число х</label>
-                <input type="text" id="x" name="item-x">
+                <input type="text" id="x" required="required" name="item-x">
             </div>
             <div>
                 <label for="y">Число y</label>
-                <input type="text" id="y" name="item-y">
+                <input type="text" id="y" required="required" name="item-y">
             </div> <br>
             <button onclick="Run2()">Розв'язати</button>
             <br>
@@ -45,9 +45,13 @@
             <legend>Mission 03</legend>
             <div>
                 <label for="w">Введіть довжину сторони ребра куба</label>
-                <input type="text" id="w" name="item-w">
+                <input type="text" id="w" required="required" name="item-w">
+            </div>
+            <div>
+                <label for="u"></label>
             </div>
             <button onclick="Run3()">Знайти</button>
+
             <br>
             <output id="res03"></output>
         </fieldset>
@@ -55,11 +59,11 @@
             <legend>Mision 04</legend>
             <div>
                 <label for="z"> Число z</label>
-                <input type="text" id="z" name="item-z">
+                <input type="text" required="required" id="z" name="item-z">
             </div>
             <div>
                 <label for="e">Число e</label>
-                <input type="text" id="e" name="item-e">
+                <input type="text" required="required" id="e" name="item-e">
             </div>
             <button onclick="Run4()">Розв'язати</button>
             <br>
