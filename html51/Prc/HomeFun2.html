@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b {
+            width: 280px;
+            height: 150px;
+            border: 5px solid black;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .b::before,
+        .b::after {
+            content: '';
+            position: absolute;
+        }
+        
+        .b::after {
+            /* Добавляем контакт справа */
+            width: 10px;
+            height: 20px;
+            background: #000;
+            right: -10px;
+            top: 60px;
+        }
+        
+        .b::before {
+            height: 100%;
+        }
+        
+        .low::before {
+            /* Красная батарейка */
+            width: 33%;
+            background: #ED1C24;
+        }
+        
+        .medium::before {
+            width: 50%;
+            background: rgb(191, 194, 9);
+        }
+        
+        .height::before {
+            width: 100%;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" b low"> </div>
+    <div class=" b medium"></div>
+    <div class="b height"></div>
+</body>
+
+</html>
