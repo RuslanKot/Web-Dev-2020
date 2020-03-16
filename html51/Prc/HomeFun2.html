@@ -20,33 +20,16 @@
             position: absolute;
         }
         
-        .b::after {
-            /* Добавляем контакт справа */
-            width: 10px;
-            height: 20px;
-            background: #000;
-            right: -10px;
-            top: 60px;
-        }
-        
         .b::before {
             height: 100%;
         }
         
-        .low::before {
-            /* Красная батарейка */
-            width: 33%;
-            background: #ED1C24;
-        }
-        
-        .medium::before {
-            width: 50%;
-            background: rgb(191, 194, 9);
-        }
-        
-        .height::before {
-            width: 100%;
-            background: green;
+        .low::after {
+            width: 30px;
+            height: 20px;
+            background: red;
+            left: -20px;
+            top: 40px;
         }
     </style>
 </head>
