@@ -30,5 +30,6 @@ function Run4() {
     var e = document.getElementById('e').value | 0;
     var res = document.getElementById('res04');
     var dob = Math.sqrt((Math.abs(z) * Math.abs(e)))
-    res.innerHTML = "Результат" + "<br>" + dob;
+    var dima = ((Math.abs(z) + Math.abs(e)) / 2)
+    res.innerHTML = "Результат:" + "<br>" + "Середне геометричне = " + dob + "<br>" + "Середне арифметичне = " + dima;
 }
