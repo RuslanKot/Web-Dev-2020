@@ -4,3 +4,7 @@
         background-image: url(../img/Quen.jpg);
         background-repeat: no-repeat;
     }
+    
+    .header {
+        position: right;
+    }
