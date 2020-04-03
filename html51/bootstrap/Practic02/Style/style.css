@@ -1,0 +1,6 @@
+    #Foto {
+        min-height: 70vh;
+        background-position: top center;
+        background-image: url(../img/Quen.jpg);
+        background-repeat: no-repeat;
+    }
