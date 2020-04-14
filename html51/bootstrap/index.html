@@ -1,49 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+    <title></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <body>
+    <div class="jumbotron">
         <div class="container">
-            <div class="jumbotron">
-                <h1>Music Store</h1>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <img class="img-responsive" src="Album.gif." alt=" ">
-                </div>
-                <div class="col-xs-12 col-sm-8 col-md-9 ">
-                    <div class="Info">
-                        <h2>Album Title</h2>
-                        <h3>Artist</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quibusdam ratione? Mollitia saepe iste, perspiciatis distinctio veniam, odio nulla itaque omnis accusamus eius quaerat consectetur recusandae explicabo excepturi vitae harum. </p>
+            <h1>Регистрация</h1>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-10">
+                <form class="form-horizontal">
+                    <legend>Регистрация участника</legend>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Как в Вам обращаться?</label>
+                        <div class="col-md-5">
+                            <select class="form-control">
+                            <option value="1">Mr</option>
+                            <option value="2">Mrs</option>
+                          
+                        </select>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="first_last_name">Фамилия и имя</label>
+                        <div class="col-md-5">
+                            <input class="form-control" placeholder="Билл Гейтс" id="Name" required="required" />
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label class="control-label col-md-3" for="company">Компания (учебное заведение)</label>
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-education "></span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="НафтоГаз" required="required" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="email">E-mail</label>
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-envelope "></span>
+                                </div>
+                                <input class="form-control" id="email" type="email" placeholder="Name@mail.com" required="required" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Должность</label>
+                        <div class="col-md-5">
+                            <input class="form-control" type="text" placeholder="Менеджер" required="required" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="city">Город</label>
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-home"></span>
+                                </div>
+                                <input class="form-control" id="city" type="text" placeholder="г. Каменец" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="feedback">
+                        Немного о себе</label>
+                        <div class="col-md-5">
+                            <textarea rows="8" class="form-control "></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit " class="btn btn-primary col-md-offset-7 ">Submit</button>
+                </form>
+
             </div>
-            .
-            <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-                <a class="navbar-brand" class="active" href="#">Title</a>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                </ul>
-            </nav>
 
+        </div>
 
-            <script src="public/js/jquery-3.4.1.min.js"></script>
-            <script src="public/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+</body>
 
 </html>

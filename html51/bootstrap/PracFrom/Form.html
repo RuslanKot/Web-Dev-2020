@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        #demo01 {
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        function display_alert() {
+            demo01.style.visibility = "visible";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Form</h1>
+        </div>
+    </div>
+    <div class="countainer">
+        <div class="row">
+            <div class="col-md-9">
+                <form class="form-horizontal" role="form" action="" method="post">
+                    <legend>Регистрация </legend>
+                </form>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="greet1">Как в Вам обращаться?</label>
+                    <div class="col-md-6">
+                        <select class="form-control" id="greet1">
+                        <option value="1">Mr</option>
+                        <option value="2">Mrs</option>
+                        <option value="3">Hidden</option>
+                    </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
